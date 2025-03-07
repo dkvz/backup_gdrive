@@ -12,7 +12,7 @@ BACKUP_SOURCES="/srv/
 RCLONE_DEST="onedrive:/vps"
 
 for s in $BACKUP_SOURCES; do
-  if ! rclone sync "$s" "${RCLONE_DEST}/${s}"
+  if ! rclone sync -l "$s" "${RCLONE_DEST}/${s}"
   then
     echo "backup sync error for ${s}"
   fi
