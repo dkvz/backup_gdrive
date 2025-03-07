@@ -4,6 +4,7 @@ BACKUP_SOURCES="/srv/
 /etc/nginx/
 /etc/nftables.conf
 /etc/postfix/
+/etc/systemd/system/
 /home/mailuser/"
 
 # <RCLONE_REMOTE>:<BACKUP_DIR>
